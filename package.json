@@ -7,7 +7,7 @@
   "engines": {
     "vscode": "^1.11.0"
   },
-  "icon": "./Images/firstUpperIcon.png",
+  "icon": "Images/firstUpperIcon.png",
   "categories": [
     "Formatters",
     "Other"
