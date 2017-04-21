@@ -16,7 +16,7 @@ export function activate(context: ExtensionContext) {
 
 function getForbiddenWords() {
     forbiddenWords.pop();
-    let fileUri = Uri.file(path.join(__dirname, '../FirstUpperForbiddenWords.txt'));
+    let fileUri = Uri.file(path.join(__dirname, '../../data/FirstUpperForbiddenWords.txt'));
     return workspace.openTextDocument(fileUri).then((document) => {
         for (var index = 0; index < document.lineCount; index++) {
 
