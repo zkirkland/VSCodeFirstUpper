@@ -7,9 +7,15 @@
   "engines": {
     "vscode": "^1.11.0"
   },
+  "icon": "./Images/firstUpperIcon.png",
   "categories": [
+    "Formatters",
     "Other"
   ],
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/zkirkland/VSCodeFirstUpper"
+  },
   "activationEvents": [
     "onCommand:extension.capitalizeTitle",
     "onCommand:extension.capitalizeMarkDownTitles"
@@ -41,6 +47,6 @@
     "@types/mocha": "^2.2.32"
   },
   "dependencies": {
-    "dawg-lookup": "^2.2.1"
+    
   }
 }
