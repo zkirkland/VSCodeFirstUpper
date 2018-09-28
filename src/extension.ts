@@ -112,7 +112,7 @@ function capitalizeMDFirstLetters() {
     editor.selection = new vscode.Selection(new vscode.Position(0,0), new vscode.Position(numberOfLines - 1, lastLineLastCharacter));
     
     let selectionText = editor.document.getText(editor.selection);
-    let listOfLines = selectionText.split("\r\n");
+    let listOfLines = selectionText.split(/\r?\n/);
     
     for (var i = 0; i < listOfLines.length; i++) {
         line = listOfLines[i];
