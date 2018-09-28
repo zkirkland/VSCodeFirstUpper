@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.2.1 (September 28, 2018)
+- Fix [Issue #2](https://github.com/zkirkland/VSCodeFirstUpper/issues/2): "Wrongly removed line breaks".
+  - (for real this time)
+
 ## 0.2.0 (September 28, 2018)
 - Update to use latest versions of dependencies.
 - Fix [Issue #2](https://github.com/zkirkland/VSCodeFirstUpper/issues/2): "Wrongly removed line breaks".
