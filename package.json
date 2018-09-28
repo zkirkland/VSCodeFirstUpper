@@ -1,52 +1,50 @@
 {
-  "name": "vscode-firstupper",
-  "displayName": "VSCodeFirstUpper",
-  "description": "Different tools for capitalization.",
-  "version": "0.0.1",
-  "publisher": "zkirkland",
-  "engines": {
-    "vscode": "^1.11.0"
-  },
-  "icon": "Images/firstUpperIcon.png",
-  "categories": [
-    "Formatters",
-    "Other"
-  ],
-  "repository": {
-      "type": "git",
-      "url": "https://github.com/zkirkland/VSCodeFirstUpper"
-  },
-  "activationEvents": [
-    "onCommand:extension.capitalizeTitle",
-    "onCommand:extension.capitalizeMarkDownTitles"
-  ],
-  "main": "./out/src/extension",
-  "contributes": {
-    "commands": [
-      {
-        "command": "extension.capitalizeTitle",
-        "title": "Capitalize Title"
-      },
-      {
-        "command": "extension.capitalizeMarkDownTitles",
-        "title": "Capitalize Markdown Titles"
-      }
-    ]
-  },
-  "scripts": {
-    "vscode:prepublish": "tsc -p ./",
-    "compile": "tsc -watch -p ./",
-    "postinstall": "node ./node_modules/vscode/bin/install",
-    "test": "node ./node_modules/vscode/bin/test"
-  },
-  "devDependencies": {
-    "typescript": "^2.0.3",
-    "vscode": "^1.0.0",
-    "mocha": "^2.3.3",
-    "@types/node": "^6.0.40",
-    "@types/mocha": "^2.2.32"
-  },
-  "dependencies": {
-    
-  }
+    "name": "vscode-firstupper",
+    "displayName": "VSCodeFirstUpper",
+    "description": "Different tools for capitalization.",
+    "version": "0.2.0",
+    "publisher": "zkirkland",
+    "engines": {
+        "vscode": "^1.27.0"
+    },
+    "icon": "Images/firstUpperIcon.png",
+    "categories": [
+        "Formatters",
+        "Other"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/zkirkland/VSCodeFirstUpper"
+    },
+    "activationEvents": [
+      "onCommand:extension.capitalizeTitle",
+      "onCommand:extension.capitalizeMarkDownTitles"
+    ],
+    "main": "./out/extension",
+    "contributes": {
+        "commands": [
+          {
+            "command": "extension.capitalizeTitle",
+            "title": "Capitalize Title"
+          },
+          {
+            "command": "extension.capitalizeMarkDownTitles",
+            "title": "Capitalize Markdown Titles"
+          }
+        ]
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "npm run compile && node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "typescript": "^2.6.1",
+        "vscode": "^1.1.21",
+        "tslint": "^5.8.0",
+        "@types/node": "^8.10.25",
+        "@types/mocha": "^2.2.42"
+    }
 }
